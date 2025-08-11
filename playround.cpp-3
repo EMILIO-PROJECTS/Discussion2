@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+
+int main() {
+
+    system("cls");
+
+
+    int N;
+    int odd = 0;
+
+    cin >> N;
+
+    while (N > 0) {      // 0 % 10 == 4
+        if ((N % 10) % 2 != 0) {
+            odd++;
+        }
+
+        N = N / 10;
+    }
+
+
+    cout << odd << endl;
+
+}
